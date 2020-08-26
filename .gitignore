@@ -2,4 +2,8 @@
 node_modules
 *.log
 
+# personal preferences
+.vscode/settings.json
+
+# bundle output
 public/bundle.*
