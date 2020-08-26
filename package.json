@@ -38,7 +38,10 @@
     "svelteSortOrder": "scripts-markup-styles",
     "svelteStrictMode": true,
     "svelteBracketNewLine": true,
-    "svelteAllowShorthand": false
+    "svelteAllowShorthand": false,
+    "plugins": [
+      "./node_modules/prettier-plugin-svelte"
+    ]
   },
   "husky": {
     "hooks": {
@@ -47,7 +50,7 @@
   },
   "lint-staged": {
     "*.{js,md,svelte,svx,json,html,css}": [
-      "prettier --write"
+      "prettier --plugin-search-dir=. --write"
     ]
   }
 }

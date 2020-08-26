@@ -8,4 +8,4 @@
   <title>{title}</title>
 </svelte:head>
 
-<Router routes="routes" />
+<Router routes="{routes}" />
