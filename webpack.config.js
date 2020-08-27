@@ -1,6 +1,7 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 const { mdsvex } = require('mdsvex')
+const appConfig = require('./app.config')
 
 const mode = process.env.NODE_ENV || 'development'
 const prod = mode === 'production'
@@ -20,6 +21,7 @@ module.exports = {
     path: __dirname + '/public',
     filename: '[name].js',
     chunkFilename: '[name].[id].js',
+    publicPath: appConfig.basePath || '/',
   },
   module: {
     rules: [
@@ -30,12 +32,13 @@ module.exports = {
           options: {
             emitCss: true,
             dev: !prod,
-            hydratable: true,
-            hotReload: false, // pending https://github.com/sveltejs/svelte/issues/2377
+            hydratable: false,
+            hotReload: true,
             preprocess: mdsvex({
               layout: {
                 _: './pages/_mdx.svelte',
               },
+              remarkPlugins: [require('reading-time'), require('remark-autolink-headings')],
             }),
           },
         },

@@ -6,4 +6,7 @@ node_modules
 .vscode/settings.json
 
 # bundle output
-public/bundle.*
+public/**
+!public/index.html
+!public/favicon.png
+!public/global.css
