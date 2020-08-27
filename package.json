@@ -1,18 +1,19 @@
 {
-  "name": "svelte-routify",
+  "name": "svelte-mdx-routify-demo",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "sirv public --single",
-    "bootstrap": "node boostrap.js",
-    "prebuild": "yarn boostrap",
+    "serve": "sirv public --single",
     "build": "NODE_ENV=production webpack",
-    "dev": "yarn bootstrap && run-p dev:webpack dev:routify",
+    "dev": "run-p dev:webpack dev:routify",
     "dev:webpack": "webpack-dev-server --content-base public",
     "dev:routify": "routify"
   },
-  "devDependencies": {
+  "dependencies": {
     "@sveltech/routify": "^1.9.9",
+    "@sveltech/ssr": "^0.0.12"
+  },
+  "devDependencies": {
     "css-loader": "^2.1.1",
     "front-matter": "^4.0.2",
     "husky": "^4.2.5",
@@ -24,13 +25,19 @@
     "prettier-plugin-svelte": "^1.1.1",
     "reading-time": "^1.2.0",
     "remark-autolink-headings": "^6.0.1",
-    "serve": "^11.0.0",
+    "sirv": "^1.0.6",
     "style-loader": "^0.23.1",
     "svelte": "^3.0.0",
     "svelte-loader": "2.13.3",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.3.1"
+    "webpack-dev-server": "^3.3.1",
+    "webpack-shell-plugin": "^0.5.0"
+  },
+  "routify": {
+    "pages": "./pages",
+    "dynamicImports": true,
+    "routifyDir": ".routify"
   },
   "prettier": {
     "printWidth": 120,

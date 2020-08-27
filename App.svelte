@@ -1,7 +1,7 @@
 <script>
   export let title
   import { Router } from '@sveltech/routify'
-  import { routes } from '@sveltech/routify/tmp/routes'
+  import { routes } from './.routify/routes'
 </script>
 
 <svelte:head>
