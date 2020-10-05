@@ -5,14 +5,14 @@ node_modules
 # personal preferences
 .vscode/settings.json
 
-# bundle output
-public/**
-!public/index.html
-!public/favicon.png
-!public/global.css
+# build distribution
+dist
 
 # vercel
 .vercel
 
 # routify
 .routify
+
+# ENV
+.env
