@@ -114,36 +114,36 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@roxi/routify@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@roxi/routify/-/routify-2.0.0.tgz#d743be6fd3bdc78544e3cbed3b2787b363907599"
-  integrity sha512-1+lmaWbSsr++zWTjj9evRu9fsDUkc+Adup4qI92n+oW4BkuhfmF/xVXCfhGR8PVlD9rUrk5eFUgz2wz+oWI1fQ==
+"@roxi/routify@^2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@roxi/routify/-/routify-2.1.4.tgz#e5e5cb24bdc8bf542923f91e441471e4d630ef1a"
+  integrity sha512-/9JX/xdCjs/fWBaCPKyfZKDKlKQIr3STqhGU93o+Oq5G96DsIpjiYb2OD1t8MbmeIg3UWqWUXTUr01zPjYliyQ==
   dependencies:
-    "@sveltech/ssr" "^0.0.12"
+    "@roxi/ssr" "^0.2.1"
     "@types/node" ">=4.2.0 < 13"
     cheap-watch "^1.0.2"
     commander "^5.0.0"
-    dotenv "^8.2.0"
+    configent "^1.0.3"
     esm "^3.2.25"
     fs-extra "^9.0.1"
     log-symbols "^3.0.0"
     picomatch "^2.2.2"
     rollup-pluginutils "^2.8.2"
 
-"@sindresorhus/is@^0.14.0":
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
-  integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
-
-"@sveltech/ssr@^0.0.12":
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@sveltech/ssr/-/ssr-0.0.12.tgz#48d140ea0a3c0f480886305eb8e1314144e3f1fa"
-  integrity sha512-2gbDxy9Hpp6CCV7Q1xu+Kw4EUnYAmfY2Yq9L4YolRUWRXnFmCMlriAs084ilZjDIB1kvxQ2c/AVZEEbgROioCg==
+"@roxi/ssr@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@roxi/ssr/-/ssr-0.2.1.tgz#45c9a34aeb58fdb2642ce6d11ae750c645d7cf7a"
+  integrity sha512-C86xWJOmtCGZr/U4MURqePM0oDKFkTlLeEyT07R+7jSKvREKZ2manJAeAebYudJLYEGITEPGqObhRan32bUUbg==
   dependencies:
     bufferutil "^4.0.1"
     jsdom "^16.0.1"
     node-fetch "^2.6.0"
     utf-8-validate "^5.0.2"
+
+"@sindresorhus/is@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
+  integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"

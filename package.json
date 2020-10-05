@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "serve": "sirv build --single",
+    "serve": "sirv dist --single",
     "build": "run-s build:routify build:svite",
     "build:routify": "routify run -b",
     "build:svite": "svite build",
@@ -14,7 +14,7 @@
     "dev:routify": "routify run"
   },
   "dependencies": {
-    "@roxi/routify": "^2.0.0"
+    "@roxi/routify": "^2.1.4"
   },
   "devDependencies": {
     "acorn": "^8.0.1",
