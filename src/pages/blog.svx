@@ -1,0 +1,39 @@
+---
+title: Blog
+---
+
+<!-- prettier-ignore -->
+<script>
+  import { url } from '@roxi/routify'
+  const query = `
+    query ALL_POSTS {
+      allPosts(data:{}) {
+        _id
+        slug
+        frontmatter {
+          title
+          date
+          published
+          tags
+        }
+      }
+    }
+  `
+</script>
+
+# {title}
+
+Welcome to the blog
+
+## Posts
+
+{#each query.allPosts as post}
+
+  <article>
+    <div>
+      <a href="{$url(post.slug)}">{post.frontmatter.title}</a>
+      <p>{new Date(post.frontmatter.date).toDateString()}</p>
+    </div>
+  </article>
+{/each}
+
