@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "serve": "sirv dist --single",
-    "build": "run-s build:routify build:svite",
+    "serve": "sirv build --single",
+    "build": "run-s build:*",
     "build:routify": "routify run -b",
     "build:svite": "svite build",
     "build:spank": "spank",
     "ndev": "vercel dev",
-    "dev": "run-p dev:routify dev:svite",
+    "dev": "run-p dev:*",
     "dev:svite": "svite dev",
     "dev:routify": "routify run"
   },
